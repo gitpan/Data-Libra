@@ -1,8 +1,10 @@
 package Data::Libra;
 
+require 5.006;
+
 use strict;
 use warnings;
-use version; our $VERSION = qv('0.0.3');
+use version; our $VERSION = qv('0.0.4');
 use Digest::MD5;
 use Carp;
 
@@ -52,7 +54,7 @@ __END__
 
 =head1 NAME
 
-Data::Libra - Generating unique and random values from a string.
+Data::Libra - Generates unique and random values from a string.
 
 =head1 SYNOPSIS
 
@@ -81,7 +83,7 @@ I<or>
 
 =head1 DESCRIPTION
 
-Data::Libra generate random values from a string. If you scan the same string, you will get the same values. It works like "Barcode Battler" or "Monster Rancher(Monster Farm)".
+Data::Libra generate random values from a string. If you scan the same string, you will get the same values. It works like "Barcode Battler" or "Monster Rancher" (Monster Farm).
 
 =head2 Methods
 
@@ -105,9 +107,9 @@ set items that you want to get from scan() method. KEY will be contained in the 
 
 =item my $ref_values = $libra->scan($some_strings);
 
-generate random values from $some_strings.
+Generates random values from $some_strings.
 
-For example, if you set values param like this:
+For example, if you set the values param like this:
 
   my $libra = new Data::Libra(
       values => {KEY1 => [100, 1000], KEY2 => [1, 100]}
@@ -122,7 +124,7 @@ The returned value is a hash reference like this:
 
 =back
 
-"Libra" is a name of the magic in Final Fantasy by which scan status of monsters.
+"Libra" is the name of the magic in Final Fantasy by which you scan the stats of the monsters.
 
 =head1 BUGS AND LIMITATIONS
 

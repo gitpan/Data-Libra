@@ -1,9 +1,9 @@
 ---
 name: Data-Libra
-version: 0.0.3
+version: 0.0.4
 author:
   - 'Masahiro Honma <hiratara@cpan.org>'
-abstract: Generating unique and random values from a string.
+abstract: Generates unique and random values from a string.
 license: perl
 resources:
   license: http://dev.perl.org/licenses/
@@ -14,7 +14,7 @@ requires:
 provides:
   Data::Libra:
     file: lib/Data/Libra.pm
-    version: 0.0.3
+    version: 0.0.4
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
